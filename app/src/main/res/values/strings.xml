@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Healthy Calculator</string>
+
+    <string-array name="faixa_etaria">
+        <item>Selecione uma opção</item>
+        <item>Entre 18 e 30 anos</item>
+        <item>Entre 31 e 60 anos</item>
+        <item>Acima de 60 anos</item>
+    </string-array>
+
+    <string-array name="atividades">
+        <item>Atividade leve</item>
+        <item>Atividade moderada</item>
+        <item>Atividade intensa</item>
+    </string-array>
+</resources>

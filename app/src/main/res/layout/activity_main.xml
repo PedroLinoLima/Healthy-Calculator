@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="#2bbc7d">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_containerLogo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="@+id/id_containerLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_seja_bem_vindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/frijole"
+        android:text="SEJA BEM-VINDO"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_containerLogo"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/login"
+        app:layout_constraintStart_toStartOf="@+id/tv_seja_bem_vindo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seja_bem_vindo" />
+
+    <ImageView
+        android:id="@+id/iv_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/cadastro"
+        app:layout_constraintEnd_toEndOf="@+id/tv_seja_bem_vindo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seja_bem_vindo" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/frijole"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_login"
+        app:layout_constraintStart_toStartOf="@+id/iv_login"
+        app:layout_constraintTop_toBottomOf="@+id/iv_login" />
+
+    <TextView
+        android:id="@+id/tv_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/frijole"
+        android:text="CADASTRO"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_cadastro"
+        app:layout_constraintStart_toStartOf="@+id/iv_cadastro"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cadastro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

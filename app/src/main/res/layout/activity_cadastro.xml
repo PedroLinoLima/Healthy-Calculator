@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:layout_gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.Cadastro"
+        android:background="#2bbc7d"
+        android:paddingBottom="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primaryColor"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_trocar_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frijole"
+            android:text="Trocar foto"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_profile" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/frijole"
+            android:text="E-mail"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_trocar_foto" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="16dp"
+            android:hint="E-mail"
+            android:textColor="@color/secondaryDarkColor"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/et_background_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frijole"
+            android:text="Senha"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+        <EditText
+            android:id="@+id/et_senha"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/et_background_login"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="16dp"
+            android:hint="Senha"
+            android:textColor="@color/secondaryDarkColor"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/secondaryDarkColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_senha" />
+
+        <TextView
+            android:id="@+id/tv_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frijole"
+            android:text="Nome"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_senha" />
+
+        <EditText
+            android:id="@+id/et_nome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/et_background_login"
+            android:drawableStart="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="16dp"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:textColor="@color/secondaryDarkColor"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/secondaryDarkColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nome" />
+
+        <TextView
+            android:id="@+id/tv_profissao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frijole"
+            android:text="Profissão"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_nome" />
+
+        <EditText
+            android:id="@+id/et_profissao"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/et_background_login"
+            android:drawableStart="@drawable/ic_baseline_groups_24"
+            android:drawablePadding="16dp"
+            android:hint="Profissão"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textColor="@color/secondaryDarkColor"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/secondaryDarkColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_profissao" />
+
+        <TextView
+            android:id="@+id/tv_data_nascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frijole"
+            android:text="Data de Nascimento"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_profissao" />
+
+        <EditText
+            android:id="@+id/et_data_nascimento"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/et_background_login"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+            android:drawablePadding="16dp"
+            android:hint="Data de Nascimento"
+            android:focusable="false"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:textColor="@color/secondaryDarkColor"
+            android:textColorHint="@color/secondaryDarkColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_data_nascimento" />
+
+        <TextView
+            android:id="@+id/tv_altura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frijole"
+            android:text="Altura"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_data_nascimento" />
+
+        <EditText
+            android:id="@+id/et_altura"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/et_background_login"
+            android:drawableStart="@drawable/ic_baseline_height_24"
+            android:drawablePadding="16dp"
+            android:hint="Altura"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:textColor="@color/secondaryDarkColor"
+            android:textColorHint="@color/secondaryDarkColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_altura" />
+
+        <TextView
+            android:id="@+id/tv_sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/frijole"
+            android:text="Sexo"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_altura" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_cadastroCliente"
+            android:layout_width="333dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sexo">
+
+            <RadioButton
+                android:id="@+id/radio_masculino"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/white"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/secondaryDarkColor"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radio_feminino"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/white"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/secondaryDarkColor"
+                android:text="Feminino" />
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
